@@ -30,7 +30,7 @@ $(document).ready(function () {
             375:{item:1, stagePadding: 56, margin:30},
             390:{item:1, stagePadding: 65},
             425:{item:1, stagePadding: 75},
-            768:{items:1,stagePadding: 250},
+            768:{items:3,stagePadding: 0},
             1024:{items:3, stagePadding: 110},
             1200:{items:4},
             1600:{items:5}
