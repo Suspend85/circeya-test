@@ -5,8 +5,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        img {
+            vertical-align: middle;
+        }
     }
 }
+
 .menu {
     &__call {
         position: relative;
@@ -15,29 +19,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
         cursor: pointer;
         img {
-            object-fit: contain;
             width: 80%;
             height: 80%;
-        }
+            object-fit: contain;
 
+        }
     }
 }
 
 @media (min-width: 640px ) {
-    .container-a {
-        margin: 0 auto;
-        //max-width: 640px;
-        //padding: 0;
-    }
     .header__inner {
         min-height: 100px;
-    }
-}
-@media (min-width: 768px ) {
-    .container-a {
-
     }
 }

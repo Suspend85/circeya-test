@@ -42,7 +42,6 @@
     "dependencies": {
         "@babel/polyfill": "^7.12.1",
         "Babel": "0.0.1",
-        "bootstrap": "^4.6.1",
         "browser-sync": "^2.27.7",
         "core-js": "^2.6.5",
         "font-awesome": "^4.7.0",

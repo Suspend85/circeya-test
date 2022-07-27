@@ -1,19 +1,16 @@
 $(document).ready(function () {
-
-    // TABS
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function () {
         $(this)
             .addClass('catalog__tab_active')
             .siblings()
             .removeClass('catalog__tab_active')
-            .closest('div.container')
+            .closest('div.container-a')
             .find('div.catalog__content')
             .removeClass('catalog__content_active')
             .eq($(this).index())
             .addClass('catalog__content_active');
     });
 
-    // OWL Carousel
     $('.owl-carousel').owlCarousel({
         stagePadding: 56,
         center: true,
@@ -37,7 +34,6 @@ $(document).ready(function () {
         }
     });
 
-    // magnificPopup GALLERY
     $('.popup-gallery').magnificPopup({
         delegate: 'a',
         type: 'image',
@@ -48,13 +44,10 @@ $(document).ready(function () {
             tCounter: '',
             enabled: true,
             navigateByImgClick: false,
-            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+            preload: [0,1]
         },
         image: {
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-            // titleSrc: function(item) {
-            //     return item.el.attr('title') + '<small></small>';
-            // }
         }
     });
 
