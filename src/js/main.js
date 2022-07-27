@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function () {
         $(this)
             .addClass('catalog__tab_active')
@@ -34,21 +35,31 @@ $(document).ready(function () {
 
     $('.popup-gallery').magnificPopup({
         delegate: 'a',
+        fixedContentPos: true,
+        overflowY: 'auto',
+        alignTop: true,
         type: 'image',
-        removalDelay: 100,
-        tLoading: 'Loading image #%curr%...',
-        mainClass: 'mfp-img-mobile',
+        tLoading: 'Загружается изображение...',
+        mainClass: 'mfp-img-mobile mfp-with-zoom',
+        tClose: 'mfp-close',
         gallery: {
+            autoFocusLast: true,
             tCounter: '',
             enabled: true,
             navigateByImgClick: false,
-            preload: [0,1]
+        },
+        zoom: {
+            enabled: true,
+            duration: 300,
+            easing: 'ease-in-out',
         },
         image: {
+            horizontalFit: true,
+            verticalFit: true,
+            titleSrc: 'title',
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-        }
+            },
     });
-
 });
 
 

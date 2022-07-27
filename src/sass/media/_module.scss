@@ -3,22 +3,20 @@
         .image-wrapper {
             max-width: 100%;
         }
-    .full-width {
-        width: 100%;
-        display: block;
-        left: unset;
-        right: unset;
-        margin: 0 auto;
-        img {
+        .full-width {
             width: 100%;
+            display: block;
+            left: unset;
+            right: unset;
+            margin: 0 auto;
+            img {
+                width: 100%;
+            }
         }
-    }
-
     }
 }
 
 @media (min-width: 576px ) {
-
     .container-a {
         width: 90%;
     }
@@ -59,7 +57,6 @@
     .container-a {
         width: 88%;
     }
-
 }
 
 @media (min-width: 992px ) {
@@ -104,13 +101,11 @@
                 margin: 0;
             }
         }
-
         .full-width {
             width: 50vw;
             img {
                 max-height: 480px;
             }
         }
-
     }
 }

@@ -75,7 +75,7 @@ gulp.task('scripts-vendor', function() {
         .pipe(uglify())
         .pipe(concat('vendor.min.js'))
         .pipe(gulp.dest("dist/js"))
-        // .pipe(browserSync.stream())
+        .pipe(browserSync.stream())
 });
 
 gulp.task('fonts', function() {
