@@ -11,26 +11,24 @@ $(document).ready(function () {
             .addClass('catalog__content_active');
     });
 
-    $('.owl-carousel').owlCarousel({
-        stagePadding: 56,
+    const owl = $('.owl-carousel');
+    $(owl).owlCarousel({
+        autoWidth: true,
+        autoHeight:false,
         center: true,
-        items:1,
-        loop:true,
+        items: 1,
+        loop: true,
         margin: 30,
         nav: false,
         dots: false,
         touchDrag: true,
         mouseDrag: true,
-        responsive:{
-            300:{items:1, stagePadding: 30, margin: 10},
-            360:{items:1, stagePadding:48, margin:15},
-            375:{item:1, stagePadding: 56, margin:30},
-            390:{item:1, stagePadding: 65},
-            425:{item:1, stagePadding: 75},
-            768:{items:3,stagePadding: 0},
-            1024:{items:3, stagePadding: 110},
-            1200:{items:4},
-            1600:{items:5}
+        responsive: {
+            300: {items: 1},
+            400: {items: 1},
+            500: {items: 1},
+            768: {items: 1},
+            1024: {items: 3},
         }
     });
 

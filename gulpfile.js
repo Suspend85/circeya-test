@@ -42,7 +42,6 @@ gulp.task('styles-main', function() {
         .pipe(browserSync.stream());
 })
 
-
 gulp.task('watch', function() {
     gulp.watch("src/sass/**/*.+(scss|sass|css)", gulp.parallel('styles-vendor'));
     gulp.watch("src/sass/**/*.+(scss|sass|css)", gulp.parallel('styles-main'));
@@ -71,7 +70,6 @@ gulp.task('scripts', function () {
         .pipe(browserSync.stream())
 });
 
-
 gulp.task('scripts-vendor', function() {
     return gulp.src([...JS_LIBS])
         .pipe(uglify())
@@ -89,7 +87,6 @@ gulp.task('icons', function() {
     return gulp.src("src/media/icons/*")
         .pipe(gulp.dest("dist/media/icons"));
 });
-
 
 gulp.task('images', function() {
     return gulp.src("src/media/images/*")

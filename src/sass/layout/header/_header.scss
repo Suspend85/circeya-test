@@ -7,6 +7,7 @@
         align-items: center;
         img {
             vertical-align: middle;
+            width: 100%;
         }
     }
 }
@@ -20,6 +21,10 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        &-number {
+            display: none;
+
+        }
         img {
             width: 80%;
             height: 80%;
@@ -29,8 +34,3 @@
     }
 }
 
-@media (min-width: 640px ) {
-    .header__inner {
-        min-height: 100px;
-    }
-}

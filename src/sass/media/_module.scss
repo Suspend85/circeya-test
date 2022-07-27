@@ -1,0 +1,116 @@
+@media (min-width: 426px ) {
+    .catalog {
+        .image-wrapper {
+            max-width: 100%;
+        }
+    .full-width {
+        width: 100%;
+        display: block;
+        left: unset;
+        right: unset;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+
+    }
+}
+
+@media (min-width: 576px ) {
+
+    .container-a {
+        width: 90%;
+    }
+    .catalog {
+        .full-width {
+            img {
+                height: 100%;
+            }
+        }
+    }
+    .header__inner {
+        min-height: 100px;
+    }
+    .menu {
+        &__call {
+            display: none;
+            &-number {
+                width: 100%;
+                display: flex;
+                color: #fff;
+                font-family: 'Manrope', sans-serif;
+                font-size: 24px;
+                font-weight: 500;
+                text-align: center;
+                align-items: baseline;
+            }
+        }
+    }
+}
+@media (min-width: 768px ) {
+    .header {
+        &__inner {
+            img {
+                width: 200px;
+            }
+        }
+    }
+    .container-a {
+        width: 88%;
+    }
+
+}
+
+@media (min-width: 992px ) {
+    .container-a {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1200px ) {
+    .container-a {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1400px ) {
+    .catalog {
+        padding-bottom: 220px;
+        &__tabs {
+            font-size: 36px;
+        }
+        &__title {
+            font-size: 64px;
+        }
+        &-item {
+            margin-top: 70px;
+            display: grid;
+            grid-template-columns: minmax(400px, 600px) minmax(400px, auto);
+            gap: 200px;
+            &__subtitle {
+                font-size: 48px;
+            }
+            &__text {
+                font-size: 18px;
+            }
+            .last-item {
+                order: -1;
+                .full-width {
+                    width: 100%;
+                }
+            }
+            .image-wrapper {
+                margin: 0;
+            }
+        }
+
+        .full-width {
+            width: 50vw;
+            img {
+                max-height: 480px;
+            }
+        }
+
+    }
+}
