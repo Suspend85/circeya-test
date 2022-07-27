@@ -37,11 +37,6 @@
     background:var(--black-color);
 }
 
-.mfp-close {
-    background-image: url('media/icons/close.svg');
-    width: 16px;
-    height: 16px;
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
     font-size: 40px;
-    line-height: 1;
-    color: #fff;
 }
